@@ -1,0 +1,41 @@
+Running "100-small" task
+
+Running "jshint:small" (jshint) task
+>> 100 files lint free.
+JSHint: 1156ms
+
+Running "jshint2:small" (jshint2) task
+>> 100 files lint free.
+JSHint: 1228ms
+
+Running "100-large" task
+
+Running "jshint:large" (jshint) task
+>> 100 files lint free.
+JSHint: 57737ms
+
+Running "jshint2:large" (jshint2) task
+>> 100 files lint free.
+JSHint: 58030ms
+
+Running "100-mixed" task
+
+Running "jshint:mixed" (jshint) task
+>> 100 files lint free.
+JSHint: 19863ms
+
+Running "jshint2:mixed" (jshint2) task
+>> 100 files lint free.
+JSHint: 19270ms
+
+Running "100-frontload" task
+
+Running "jshint:frontload" (jshint) task
+>> 100 files lint free.
+JSHint: 2735ms
+
+Running "jshint2:frontload" (jshint2) task
+>> 100 files lint free.
+JSHint: 2710ms
+
+Done, without errors.
