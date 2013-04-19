@@ -1,0 +1,27 @@
+{
+  "name": "grunt-jshint2-comparison",
+  "version": "0.0.0",
+  "description": "A comparison of the grunt jshint plugins",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt-jshint2": "~0.1.0",
+    "rimraf": "~2.1.4",
+    "lodash": "~1.2.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.4.3"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgable/grunt-jshint2-comparison.git"
+  },
+  "author": "Jacob Gable",
+  "license": "MIT"
+}
