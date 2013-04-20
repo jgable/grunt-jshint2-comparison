@@ -36,8 +36,49 @@ module.exports = function(grunt) {
 			small: "<%= files %>",
 			mixed: "<%= files %>",
 			large: "<%= files %>",
-			frontload: "<%= front_load_files %>"
-		}
+			frontload: "<%= front_load_files %>",
+
+			small_cluster: {
+				options: {
+					processor: "cluster"
+				},
+				files: {
+					src: "<%= files %>"
+				}
+			},
+			mixed_cluster: {
+				options: {
+					processor: "cluster"
+				},
+				files: {
+					src: "<%= files %>"
+				}
+			},
+			large_cluster: {
+				options: {
+					processor: "cluster"
+				},
+				files: {
+					src: "<%= files %>"
+				}
+			},
+			frontload_cluster: {
+				options: {
+					processor: "cluster"
+				},
+				files: {
+					src: "<%= front_load_files %>"
+				}
+			}
+		},
+
+		start: {
+			jshint: {},
+			jshint2_async: {},
+			jshint2_cluster: {}
+		},
+
+		end: "<%= start %>"
 	};
 
 	grunt.initConfig(cfg);
@@ -182,15 +223,25 @@ module.exports = function(grunt) {
 		});
 	});
 
-	grunt.registerTask("start", function() { console.time("JSHint"); });
-	grunt.registerTask("end", function() { console.timeEnd("JSHint"); });
+	grunt.registerMultiTask("start", function() { console.time(this.target); });
+	grunt.registerMultiTask("end", function() { console.timeEnd(this.target); });
 
 	var makeTimedTasks = function(qty) {
 		var names = ["small", "large", "mixed", "frontload"];
 		var qtyNames = _.map([30, 100, 500, 1000], function(qty) {
 			var taskNames = _.map(names, function(name) {
 				var taskName = "timed-" + name + "-" + qty;
-				grunt.registerTask(taskName, ["clean", "" + qty + "-" + name, "start", "jshint:" + name, "end", "start", "jshint2:" + name, "end"]);
+				grunt.registerTask(taskName, [
+					// Clean all the files
+					"clean", 
+					// Create the test files
+					"" + qty + "-" + name, 
+					// grunt-contrib-jshint the files
+					"start:jshint", "jshint:" + name, "end:jshint",
+					// grunt-jshint2 async 
+					"start:jshint2_async", "jshint2:" + name, "end:jshint2_async", 
+					// grunt-jshint2 cluster
+					"start:jshint2_cluster", "jshint2:" + name + "_cluster", "end:jshint2_cluster"]);
 				return taskName;
 			});
 
