@@ -1,0 +1,75 @@
+
+[4mRunning "stats" task[24m
+
+[1mtimed-small-30[22m
+           jshint:  [32m390ms[39m 
+    jshint2_async:  [90m394ms[39m +4ms (1.0%)
+  jshint2_cluster:  [31m1178ms[39m +788ms (202.1%)
+
+
+[1mtimed-large-30[22m
+           jshint:  [33m17311ms[39m +11530ms (199.4%)
+    jshint2_async:  [33m17259ms[39m +11478ms (198.5%)
+  jshint2_cluster:  [32m5781ms[39m 
+
+
+[1mtimed-mixed-30[22m
+           jshint:  [33m5892ms[39m +2879ms (95.6%)
+    jshint2_async:  [33m5880ms[39m +2867ms (95.2%)
+  jshint2_cluster:  [32m3013ms[39m 
+
+
+[1mtimed-frontload-30[22m
+           jshint:  [31m2157ms[39m +298ms (16.0%)
+    jshint2_async:  [90m2097ms[39m +238ms (12.8%)
+  jshint2_cluster:  [32m1859ms[39m 
+
+[4mRunning "stats" task[24m
+
+[1mtimed-small-100[22m
+           jshint:  [90m981ms[39m +51ms (5.5%)
+    jshint2_async:  [32m930ms[39m 
+  jshint2_cluster:  [33m2071ms[39m +1141ms (122.7%)
+
+
+[1mtimed-large-100[22m
+           jshint:  [33m56040ms[39m +40490ms (260.4%)
+    jshint2_async:  [33m56174ms[39m +40624ms (261.2%)
+  jshint2_cluster:  [32m15550ms[39m 
+
+
+[1mtimed-mixed-100[22m
+           jshint:  [33m19182ms[39m +12148ms (172.7%)
+    jshint2_async:  [33m18949ms[39m +11915ms (169.4%)
+  jshint2_cluster:  [32m7034ms[39m 
+
+
+[1mtimed-frontload-100[22m
+           jshint:  [31m2722ms[39m +78ms (3.0%)
+    jshint2_async:  [32m2644ms[39m 
+  jshint2_cluster:  [90m2721ms[39m +77ms (2.9%)
+
+[4mRunning "stats" task[24m
+
+[1mtimed-small-500[22m
+           jshint:  [90m4682ms[39m +159ms (3.5%)
+    jshint2_async:  [32m4523ms[39m 
+  jshint2_cluster:  [33m7112ms[39m +2589ms (57.2%)
+
+
+[1mtimed-large-500[22m
+           jshint:  [33m279294ms[39m +207719ms (290.2%)
+    jshint2_async:  [33m273466ms[39m +201891ms (282.1%)
+  jshint2_cluster:  [32m71575ms[39m 
+
+
+[1mtimed-mixed-500[22m
+           jshint:  [33m95823ms[39m +67442ms (237.6%)
+    jshint2_async:  [33m93696ms[39m +65315ms (230.1%)
+  jshint2_cluster:  [32m28381ms[39m 
+
+
+[1mtimed-frontload-500[22m
+           jshint:  [33m9496ms[39m +1765ms (22.8%)
+    jshint2_async:  [33m9181ms[39m +1450ms (18.8%)
+  jshint2_cluster:  [32m7731ms[39m 

@@ -1,0 +1,71 @@
+Running "30-small" task
+
+jshint: 386ms
+jshint2_async: 386ms
+jshint2_cluster: 1261ms
+
+Running "30-large" task
+
+jshint: 17462ms
+jshint2_async: 17422ms
+jshint2_cluster: 5763ms
+
+Running "30-mixed" task
+
+jshint: 5990ms
+jshint2_async: 5865ms
+jshint2_cluster: 3137ms
+
+Running "30-frontload" task
+
+jshint: 2197ms
+jshint2_async: 2094ms
+jshint2_cluster: 1886ms
+
+Running "100-small" task
+
+jshint: 1013ms
+jshint2_async: 920ms
+jshint2_cluster: 2160ms
+
+Running "100-large" task
+
+jshint: 55264ms
+jshint2_async: 55148ms
+jshint2_cluster: 15424ms
+
+Running "100-mixed" task
+
+jshint: 19579ms
+jshint2_async: 18464ms
+jshint2_cluster: 6947ms
+
+Running "100-frontload" task
+
+jshint: 2679ms
+jshint2_async: 2600ms
+jshint2_cluster: 2720ms
+
+Running "500-small" task
+
+jshint: 4591ms
+jshint2_async: 4552ms
+jshint2_cluster: 7121ms
+
+Running "500-large" task
+
+jshint: 279476ms
+jshint2_async: 275700ms
+jshint2_cluster: 76762ms
+
+Running "500-mixed" task
+
+jshint: 96426ms
+jshint2_async: 94191ms
+jshint2_cluster: 28319ms
+
+Running "500-frontload" task
+
+jshint: 9292ms
+jshint2_async: 9216ms
+jshint2_cluster: 7732ms
